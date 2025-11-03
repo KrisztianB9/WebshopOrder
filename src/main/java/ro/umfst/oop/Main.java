@@ -44,7 +44,7 @@ public class Main {
                 SwingUtilities.invokeLater(new Runnable() {
                     public void run() {
                         try {
-                            // Get first order and its data
+                            // Get first order and its data.json
                             final Order firstOrder = orders.get(0);
                             OrderItem itemToEdit = firstOrder.getItems().get(0);
 

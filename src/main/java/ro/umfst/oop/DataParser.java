@@ -13,7 +13,7 @@ public class DataParser {
 
     /**
      * Parses the JSON file at the given path.
-     * @param filePath Path to data.json
+     * @param filePath Path to data.json.json
      * @return A List of populated Order objects.
      * @throws IOException if the file cannot be read.
      */
@@ -97,7 +97,7 @@ public class DataParser {
         } catch (FileNotFoundException e) {
             throw new IOException("Data file not found: " + filePath, e);
         } catch (IOException e) {
-            throw new IOException("Error reading data file: " + filePath, e);
+            throw new IOException("Error reading data.json file: " + filePath, e);
         } catch (JSONException e) {
             throw new JSONException("Invalid root JSON format: " + e.getMessage());
         } finally {

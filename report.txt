@@ -1,0 +1,87 @@
+========================================
+        WEB SHOP ORDER REPORT (Batch)     
+========================================
+
+--------------------------------------------------------------------------------
+Order ID: ORD-2025-1102-00123 (PAID)
+Currency: EUR
+
+Customer:
+  Name: Ana Ionescu
+  Email: ana.ionescu@example.com
+  Tier: GOLD
+
+Order Items (Sorted by Total Value):
+SKU                  | Name                                | Qty | Details    | Line Total  
+................................................................................
+COURSE-JAVA6-101     | Java 6 OOP Basics (Video)           | 1   | DIGITAL    | 96,68 €     
+BOOK-978973413       | Clean Code, RO                      | 1   | PHYSICAL   | 38,21 €     
+WARR-1Y-EXT          | Extended Warranty 12m               | 1   | SERVICE    | 18,14 €     
+
+Order Summary:
+  Items Subtotal:   153,02 €
+  Shipping:         19,99 €
+  Total Tax:        26,56 €
+  Total Discounts:  6,92 €
+  GRAND TOTAL:      173,01 €
+
+Shipping Information:
+  Total Weight:     0.45 kg
+  Shipping Status:  REQUIRES SHIPPING
+
+--------------------------------------------------------------------------------
+Order ID: ORD-2025-1102-00124 (PROCESSING)
+Currency: EUR
+
+Customer:
+  Name: Mihai Popescu
+  Email: mihai.popescu@example.com
+  Tier: SILVER
+
+Order Items (Sorted by Total Value):
+SKU                  | Name                                | Qty | Details    | Line Total  
+................................................................................
+MOUSE-LOGI-MX3       | Logitech MX Master 3 Mouse          | 1   | PHYSICAL   | 117,81 €    
+KB-MECH-K6           | Keychron K6 Mechanical Keyboard     | 1   | PHYSICAL   | 95,08 €     
+SETUP-HOME-OFFICE    | Home Office Setup Service           | 1   | SERVICE    | 35,69 €     
+
+Order Summary:
+  Items Subtotal:   248,58 €
+  Shipping:         0,00 €
+  Total Tax:        39,69 €
+  Total Discounts:  10,00 €
+  GRAND TOTAL:      248,58 €
+
+Shipping Information:
+  Total Weight:     0.15 kg
+  Shipping Status:  REQUIRES SHIPPING
+
+--------------------------------------------------------------------------------
+Order ID: ORD-2025-1102-00125 (SHIPPED)
+Currency: EUR
+
+Customer:
+  Name: Elena Tudor
+  Email: elena.tudor@example.com
+  Tier: PLATINUM
+
+Order Items (Sorted by Total Value):
+SKU                  | Name                                | Qty | Details    | Line Total  
+................................................................................
+LAPTOP-DELL-XPS13    | Dell XPS 13 Laptop                  | 1   | PHYSICAL   | 1.432,70 €  
+SOFT-MS-OFFICE365    | Microsoft Office 365 License (1 year) | 1   | DIGITAL    | 84,58 €     
+
+Order Summary:
+  Items Subtotal:   1.517,28 €
+  Shipping:         25,00 €
+  Total Tax:        263,33 €
+  Total Discounts:  114,95 €
+  GRAND TOTAL:      1.542,28 €
+
+Shipping Information:
+  Total Weight:     1.20 kg
+  Shipping Status:  REQUIRES SHIPPING
+
+========================================
+            END OF BATCH REPORT         
+========================================
