@@ -1,0 +1,197 @@
+{
+  "orders": [
+    {
+      "orderId": "ORD-2025-1102-00123",
+      "createdAt": "2025-11-02T10:15:00Z",
+      "status": "PAID",
+      "currency": "EUR",
+      "customer": {
+        "customerId": "CUST-9912",
+        "name": { "first": "Ana", "last": "Ionescu" },
+        "email": "ana.ionescu@example.com",
+        "loyaltyTier": "GOLD",
+        "addresses": [
+          { "type": "billing", "line1": "Str. Lalelelor 12", "city": "Cluj", "country": "RO", "zip": "400100" },
+          { "type": "shipping", "line1": "Str. Lalelelor 12", "city": "Cluj", "country": "RO", "zip": "400100" }
+        ]
+      },
+      "items": [
+        {
+          "type": "PHYSICAL",
+          "sku": "BOOK-978973413",
+          "name": "Clean Code, RO",
+          "qty": 2,
+          "price": 38.5,
+          "discounts": [{ "code": "BF25", "amount": 5.0 }],
+          "dimensions": { "w": 15.0, "h": 2.5, "d": 22.0, "unit": "cm" },
+          "weight": { "value": 0.45, "unit": "kg" }
+        },
+        {
+          "type": "DIGITAL",
+          "sku": "COURSE-JAVA6-101",
+          "name": "Java 6 OOP Basics (Video)",
+          "qty": 1,
+          "price": 79.9,
+          "license": { "key": "J6-ABC-XYZ-2025", "expiresAt": "2026-11-02T00:00:00Z" }
+        },
+        {
+          "type": "SERVICE",
+          "sku": "WARR-1Y-EXT",
+          "name": "Extended Warranty 12m",
+          "qty": 1,
+          "price": 14.99,
+          "service": { "provider": "SafePlus", "termsMonths": 12 }
+        }
+      ],
+      "shipping": { "method": "COURIER", "price": 19.99, "addressRef": "shipping", "etaDays": 3 },
+      "payment": {
+        "method": "CARD",
+        "captured": true,
+        "transactions": [
+          { "id": "TX-1", "kind": "AUTH", "amount": 170.88, "success": true },
+          { "id": "TX-2", "kind": "CAPTURE", "amount": 170.88, "success": true }
+        ]
+      },
+      "notes": ["Gift wrap first item", "Do not leave at door"],
+      "meta": { "source": "mobile-app", "campaign": "black-friday", "tags": ["priority", "gift"] },
+      "taxes": [{ "name": "VAT", "rate": 0.21, "scope": "ALL" }]
+    },
+
+    {
+      "orderId": "ORD-2025-1102-00124",
+      "createdAt": "2025-11-02T12:30:00Z",
+      "status": "PROCESSING",
+      "currency": "EUR",
+      "customer": {
+        "customerId": "CUST-7741",
+        "name": { "first": "Mihai", "last": "Popescu" },
+        "email": "mihai.popescu@example.com",
+        "loyaltyTier": "SILVER",
+        "addresses": [
+          { "type": "billing", "line1": "Str. Libertatii 45", "city": "Brasov", "country": "RO", "zip": "500050" },
+          { "type": "shipping", "line1": "Str. Libertatii 45", "city": "Brasov", "country": "RO", "zip": "500050" }
+        ]
+      },
+      "items": [
+        {
+          "type": "PHYSICAL",
+          "sku": "MOUSE-LOGI-MX3",
+          "name": "Logitech MX Master 3 Mouse",
+          "qty": 1,
+          "price": 99.0,
+          "discounts": [],
+          "dimensions": { "w": 6.5, "h": 4.2, "d": 12.5, "unit": "cm" },
+          "weight": { "value": 0.15, "unit": "kg" }
+        },
+        {
+          "type": "PHYSICAL",
+          "sku": "KB-MECH-K6",
+          "name": "Keychron K6 Mechanical Keyboard",
+          "qty": 1,
+          "price": 89.9,
+          "discounts": [{ "code": "AUTUMN10", "amount": 10.0 }]
+        },
+        {
+          "type": "SERVICE",
+          "sku": "SETUP-HOME-OFFICE",
+          "name": "Home Office Setup Service",
+          "qty": 1,
+          "price": 29.99,
+          "service": { "provider": "TechAssist", "termsMonths": 1 }
+        }
+      ],
+      "shipping": { "method": "PICKUP", "price": 0.0, "addressRef": "billing", "etaDays": 1 },
+      "payment": {
+        "method": "CASH_ON_PICKUP",
+        "captured": false,
+        "transactions": []
+      },
+      "notes": ["Customer will pick up on Monday"],
+      "meta": { "source": "web", "campaign": "autumn-sale", "tags": ["silver", "pickup"] },
+      "taxes": [{ "name": "VAT", "rate": 0.19, "scope": "ALL" }]
+    },
+
+    {
+      "orderId": "ORD-2025-1102-00125",
+      "createdAt": "2025-11-02T13:45:00Z",
+      "status": "SHIPPED",
+      "currency": "EUR",
+      "customer": {
+        "customerId": "CUST-8820",
+        "name": { "first": "Elena", "last": "Tudor" },
+        "email": "elena.tudor@example.com",
+        "loyaltyTier": "PLATINUM",
+        "addresses": [
+          { "type": "billing", "line1": "Bd. Revolutiei 89", "city": "Arad", "country": "RO", "zip": "310200" },
+          { "type": "shipping", "line1": "Bd. Revolutiei 89", "city": "Arad", "country": "RO", "zip": "310200" }
+        ]
+      },
+      "items": [
+        {
+          "type": "PHYSICAL",
+          "sku": "LAPTOP-DELL-XPS13",
+          "name": "Dell XPS 13 Laptop",
+          "qty": 1,
+          "price": 1299.0,
+          "discounts": [{ "code": "VIP50", "amount": 50.0 }],
+          "dimensions": { "w": 30.2, "h": 1.5, "d": 19.9, "unit": "cm" },
+          "weight": { "value": 1.2, "unit": "kg" }
+        },
+        {
+          "type": "DIGITAL",
+          "sku": "SOFT-MS-OFFICE365",
+          "name": "Microsoft Office 365 License (1 year)",
+          "qty": 1,
+          "price": 69.9,
+          "license": { "key": "MS-ELENA-2025", "expiresAt": "2026-11-02T00:00:00Z" }
+        }
+      ],
+      "shipping": { "method": "EXPRESS", "price": 25.0, "addressRef": "shipping", "etaDays": 2 },
+      "payment": {
+        "method": "CARD",
+        "captured": true,
+        "transactions": [
+          { "id": "TX-9", "kind": "AUTH", "amount": 1343.9, "success": true },
+          { "id": "TX-10", "kind": "CAPTURE", "amount": 1343.9, "success": true }
+        ]
+      },
+      "notes": ["Leave package at reception", "Customer requested tracking link"],
+      "meta": { "source": "desktop", "campaign": "vip-event", "tags": ["platinum", "express"] },
+      "taxes": [{ "name": "VAT", "rate": 0.21, "scope": "ALL" }]
+    },
+    {
+      "orderId": "ORD-2025-1102-00126",
+      "createdAt": null,
+      "status": "UNKNOWN",
+      "currency": 100,
+      "customer": {
+        "customerId": null,
+        "name": { "first": "Invalid", "last": "" },
+        "email": "not-an-email",
+        "loyaltyTier": "WOOD",
+        "addresses": []
+      },
+      "items": [
+        {
+          "type": "PHYSICAL",
+          "sku": "",
+          "name": "Unnamed Product",
+          "qty": -5,
+          "price": -10.0
+        },
+        {
+          "type": "SERVICE",
+          "sku": "SERV-NULL",
+          "name": "Broken Service",
+          "qty": 1,
+          "price": "free"
+        }
+      ],
+      "shipping": { "method": "COURIER", "price": -15.0, "addressRef": "none", "etaDays": -2 },
+      "payment": { "method": null, "captured": "maybe", "transactions": [] },
+      "notes": ["This order should fail validation"],
+      "meta": { "source": null, "tags": [] },
+      "taxes": [{ "name": "VAT", "rate": -0.21, "scope": "ALL" }]
+    }
+  ]
+}
